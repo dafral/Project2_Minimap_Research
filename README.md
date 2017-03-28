@@ -1,6 +1,12 @@
-## Welcome to GitHub Pages
+# Minimap
 
-### abc
+## What is a minimap?
+
+A mini-map or minimap is a miniature map that is often placed at a screen corner in video games to aid players in orienting themselves within the game world. They are often only a small portion of the screen and thus must be selective in what details they display. Elements usually included on Mini-maps vary by video game genre. However, commonly included features are the position of the player character, allied units or structures, enemies, objectives and surrounding terrain.
+
+### So... minimap looks like a very important feature, most games should have it, right?
+No! The inclusion of the minimap is a game dessign 
+
 
 You can use the [editor on GitHub](https://github.com/dafral/Project2_Minimap_Research/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
