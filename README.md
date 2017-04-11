@@ -22,6 +22,15 @@ Since then, the minimap has been conquering more and more genres and games, and 
 
 
 ## Types of minimaps
+Designers generally use one of two display conventions:
+
+- The world-oriented map. It displays the entire game world with north at the top just like a paper map, regardless of the main view's current orientation. An indicator withing the mini-map marks that part of the game world currently visible in the main view. In a multipresent game, you can use the world-oriented map as a camera control device: If the player clicks the map, the camera jumps to the location clicked.
+![Image](https://i.ytimg.com/vi/L6wxJkesvy4/maxresdefault.jpg)
+
+- The character-oriented map displays the game world around the avatar, placing him at the center of the map facing the top of the screen. If the player turns turns the avatar to face in a new direction in the game world, the landscape, rather than the avatar, rotates in the map. These mini-maps don't show the whole game world, only a limited area around the avatar, and as the avatar moves, they change accordingly. They are often round and for this reason are sometimes called radar screens. Because the landscape rotates in the map, sometimes character-oriented mini-maps include an indicator pointing north, making the map double as a compass.
+![Image](https://i.ytimg.com/vi/oXSGnhSUfN8/maxresdefault.jpg)
+
+
 
 #### So... minimap looks like a very important feature, all the games should have it, right?
 No! The inclusion of the minimap is a game dessign decision. 
