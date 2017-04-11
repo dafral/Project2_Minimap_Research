@@ -1,6 +1,7 @@
 # Mini-map
 The mini-map is a constant in modern video games. If you do not know where to go, just look in the corner of your screen and you have an idea of your surroundings and now know where to go. Let's take a look in what a mini-map is and what are they used for:
 
+
 ## What is a mini-map?
 
 A mini-map (it can be also called radar screen) is a miniature map that is often placed at a screen corner in video games to aid players in orienting themselves within the game world. They are often only a small portion of the screen and thus must be selective in what details they display. Elements usually included on mini-maps vary by video game genre. However, Because the mini-map must be small (usually 5 to 10 percent of the screen area), it shows only major geographic features and minimal non-missions-critical data. Key characters or buildings usually appear in the mini-map. Spots that are not visible in the world they shouldn't be visible in the mini-map either.
@@ -10,6 +11,7 @@ A mini-map (it can be also called radar screen) is a miniature map that is often
 A mini-map helps the player orient himself and warn him of challenges not visible in the main view, such as nearby enemies in a strategy or action game or a problem developing in a construction and management simulation. Mini-maps typically show up in a corner of the screen. You can find them in virtually any game: sport games, shooters, strategy games, RPG, racing games...
 
 ![Image](http://i.imgur.com/e402V5i.jpg)
+
 
 
 ## A bit of history
@@ -27,6 +29,7 @@ Since then, the mini-map has been conquering more and more genres and games, and
 ![Image](http://media.vandal.net/i/1200x630/21345/final-fantasy-xv-20169817299_1.jpg)
 
 
+
 ## Types of mini-maps
 Designers generally use one of two display conventions:
 
@@ -38,12 +41,27 @@ Designers generally use one of two display conventions:
 
 
 
+## Pros & Cons of mini-maps
+
 #### So... mini-map looks like a very important feature, all the games should have it, right?
-No! The inclusion of the mini-map is a game dessign decision. 
+
+No! The inclusion of the mini-map is a game dessign decision. Some games that have been very succesful between video game players have no minimap.
 
 ![Image](http://i.imgur.com/gzrTfO8.jpg)
 
-## Pros & Cons of mini-maps
+There are some pros and cons we should keep in mind before deciding if we want a minimap in our game:
+
+### Pros 
+The player usually don't like to remember things while he is playing, imagine if he would have to remember the whole map! Thanks to the mini-map we can show the player how the map looks in every moment. Also it's easier to make the player notice the changes in the map. This changes doesn't have to be geographic, but can be enemies approaching the player position. Without these alerts the player could feel frustrated of unfair challenges.
+
+It also makes the game more accesible and more direct. Players that are not looking for a rough challenge are more likely to enjoy the game, or even people that are younger that usually have more difficulties retaining information. Also the player can focus in another game aspects, like how to improve his skills.
+
+### Cons
+So, what would be a possible draw back to having a mini map in a game? An argument that has surfaced among people who play games with a mini map is that it takes a sort of realism out of the game. It is obviously not realistic to have a constant map that that tracks your every location out at all times. Constantly updating as you are running around a giant world. It also distracts you for the action in the screen. 
+
+Another comment against the mini map is that it makes the game too easy. A common argument against games today is that they do not challenge the player as much as games of old did. The mini map now makes the exploration that was needed in old games non-existent. Some indie games that really want to emulate the old days usually put away the map to emulate better the experience of the exploration.
+
+![Image](https://i.ytimg.com/vi/Wl5GqAV-n2w/maxresdefault.jpg)
 
 
 
