@@ -1,4 +1,4 @@
-# Mini-map
+# **MINI-MAP**
 The mini-map is a constant in modern video games. If you do not know where to go, just look in the corner of your screen and you have an idea of your surroundings and now know where to go. Let's take a look in what a mini-map is and what are they used for:
 
 
@@ -29,17 +29,28 @@ Since then, the mini-map has been conquering more and more genres and games, and
 ![Image](http://media.vandal.net/i/1200x630/21345/final-fantasy-xv-20169817299_1.jpg)
 
 
+## Diferences in mini-maps
 
-## Types of mini-maps
+### Types of mini-maps
 Designers generally use one of two display conventions:
 
 - **The world-oriented map.** It displays the entire game world with north at the top just like a paper map, regardless of the main view's current orientation. An indicator withing the mini-map marks that part of the game world currently visible in the main view. Usually a square in the mini-map represents the portion of the world that the player is seeing in the screen. In a multipresent game, you can use the world-oriented map as a camera control device: If the player clicks the map, the camera jumps to the location clicked.
+
 ![Image](https://i.ytimg.com/vi/L6wxJkesvy4/maxresdefault.jpg)
 
 - **The character-oriented map.** It displays the game world around the avatar, placing him at the center of the map facing the top of the screen. If the player turns turns the avatar to face in a new direction in the game world, the landscape, rather than the avatar, rotates in the map. These mini-maps don't show the whole game world, only a limited area around the avatar, and as the avatar moves, they change accordingly. They are often round and for this reason are sometimes called radar screens. Because the landscape rotates in the map, sometimes character-oriented mini-maps include an indicator pointing north, making the map double as a compass.
+
 ![Image](https://i.ytimg.com/vi/oXSGnhSUfN8/maxresdefault.jpg)
 
+### Features
 
+- **Automapping.** It is a mini-map that is mainly used as a navigational aid for virtual worlds that are expansive or maze-like. An automap is typically an abstract top-down view of nearby areas of the game world and it automatically updates as the player character gains knowledge of the environment. Automaps often display traversable terrain, allies, enemies, and important locations or items.
+
+![Image](https://media.playstation.com/is/image/SCEA/the-binding-of-isaac-rebirth-screenshot-01-ps4-psvita-us-15oct14?$MediaCarousel_Original$)
+
+- **Fog of War.** In many games using a mini-map, the mini-map begins completely blank, while the map is automatically drawn as the player discovers new areas of the game world. After players discover new areas, the terrain of the discovered area often remains visible on the mini-map. If the player's characters or units cease being able to see the area, the area might be covered by a fog of war, so that unit or structure movements in that area will not be shown. Things in a fog of war portion of a mini-map may not be updated until they are rediscovered.
+
+![Image](http://s1.dmcdn.net/TUt08/854x480-ovb.jpg)
 
 ## Pros & Cons of mini-maps
 
@@ -62,6 +73,8 @@ So, what would be a possible draw back to having a mini map in a game? An argume
 Another comment against the mini map is that it makes the game too easy. A common argument against games today is that they do not challenge the player as much as games of old did. The mini map now makes the exploration that was needed in old games non-existent. Some indie games that really want to emulate the old days usually put away the map to emulate better the experience of the exploration.
 
 ![Image](https://i.ytimg.com/vi/Wl5GqAV-n2w/maxresdefault.jpg)
+
+
 
 
 
