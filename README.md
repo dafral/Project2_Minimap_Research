@@ -5,8 +5,21 @@ The Mini Map is a constant in modern video games. If you do not know where to go
 ![Image](http://i.imgur.com/D88CpN0.png)
 A minimap is a miniature map that is often placed at a screen corner in video games to aid players in orienting themselves within the game world. They are often only a small portion of the screen and thus must be selective in what details they display. Elements usually included on Mini-maps vary by video game genre. However, commonly included features are the position of the player character, allied units or structures, enemies, objectives and surrounding terrain.
 
+
 ## A bit of history
+The first minimaps in videogames history can be found in arcade games. Some examples are Rally-X by Namco in 1980 (first image) and Defender by Williams Electronics in 1981 (second image). The utility of the minimap at the beginning was to help the player and to make the game more fair. Imagine playing Rally-X without knowing where the enemies are going to pop up! 
+
+![Image](https://im3.ezgif.com/tmp/ezgif-3-63aa0369f4.gif)
 ![Image](https://www.c64-wiki.com/images/c/cb/Defender_Animation.gif)
+
+The minimap was also a particularly desirable feature in dungeon crawls, which typically featured a dungeon with many levels for players to explore. Before automapping, players were expected to draw maps by hand as they played the game, so they could navigate through the dungeon levels later. For this reason, game boxes for early 1980s Wizardry games, for example, included graph paper.
+
+![Image](https://richardgoodness.files.wordpress.com/2013/07/wizardry6maps-e1374169060795.jpg)
+
+Since then, the minimap has been conquering more and more genres and games, and nowadays we can found them in almost every genre. Mini-maps have become very common specially in real-time strategy and MMORPG video games because they serve as an indication of where the current screen lies within the scope of the game world. Most first person shooter games also have some version or variant of the mini map, often showing enemies in real time.
+
+![Image](http://media.vandal.net/i/1200x630/21345/final-fantasy-xv-20169817299_1.jpg)
+
 
 ## Types of minimaps
 
