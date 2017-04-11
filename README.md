@@ -76,6 +76,23 @@ Another comment against the mini map is that it makes the game too easy. A commo
 
 
 
+## Advices to make a great mini-map
+
+Designing a mini-map can be easy, but designing a mini-map that suits the game, helps the player and succeeds in its objective can be more challenging. Here you can find some easy advices that will help you accomplishing this:
+
+- **Choose a suitable size**. Make your map large enough to be legible, but not so big that it fills up the whole screen. If you must have the map fill up the whole screen, do your players a favor and pause the gameplay.
+
+- **Make it handy**. Make it easy for players to move/travel and look at the map at the same time. It's too much of a chore to open a map, memorize the locations, and then close the map to return to the game.
+
+- **Every element in your mini-map should be identifiable**. Create a legend to help if you need it. Players should be able to find checkpoints, doorways, quests, items, traversal goals or story points in your mini-map, and be able to see the difference betwee them.
+
+- **Indicate changes in elevation if you have them in yourt game**. Players can be very confused when dealing with levels with multiple elevations. A color code or an "onion skin" effect can could help to deal with.
+
+- **Show player's direction**. If you are using a character-oriented map you can rotate all the map, but if it's not the case, at least represent the player with an arrow pointing where he is looking at.
+
+- **Add relevant information that can help the players**. Metal Gear Solid shows the vision cones of the soldiers, Fallout shows the distance in meters between you and the point you marked... If you think the players should know some extra information, show them.
+
+![Image](http://i.imgur.com/VUv42wG.jpg)
 
 
 ____________________________________________________________________________________________________________________________________
