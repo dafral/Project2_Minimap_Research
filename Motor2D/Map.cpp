@@ -507,3 +507,52 @@ bool Map::CreateWalkabilityMap(int& width, int& height, uchar** buffer) const
 
 	return ret;
 }
+
+void Map::CreateMinimap() {
+	{
+		if (map_loaded == false)
+			return;
+
+		for (list<MapLayer*>::iterator it = data.layers.begin(); it != data.layers.end(); it++)
+		{
+			MapLayer* layer = *it;
+
+			if (layer->properties.Get("Nodraw") != 0)
+				continue;
+
+			for (int y = 0; y < data.height; ++y)
+			{
+				for (int x = 0; x < data.width; ++x)
+				{
+					int tile_id = layer->Get(x, y);
+					if (tile_id > 0)
+					{
+						TileSet* tileset = GetTilesetFromTileId(tile_id);
+
+						SDL_Rect r = tileset->GetTileRect(tile_id);
+						iPoint pos = MapToWorld(x, y);
+
+						Sprite bar;
+						iPoint coords = MapToWorld(x, y);
+
+						bar.rect.w = 8;
+						bar.rect.h = 8;
+						bar.priority = 1;
+						bar.rect.x = coords.x * 0.25;
+						bar.rect.y = coords.y * 0.25;
+
+						if (tile_id > 0 && tile_id <= 7) 
+
+							bar.g = 255;
+						
+						else 
+
+							bar.b = 255;
+						
+						App->render->sprites_toDraw.push_back(bar);
+					}
+				}
+			}
+		}
+	}
+}

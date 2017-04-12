@@ -132,6 +132,9 @@ private:
 	TileSet* GetTilesetFromTileId(int id) const;
 
 public:
+	void CreateMinimap();
+
+public:
 
 	MapData data;
 

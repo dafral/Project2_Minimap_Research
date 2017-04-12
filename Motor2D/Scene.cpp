@@ -47,7 +47,10 @@ bool Scene::Start()
 	//Test
 	villager = App->entityManager->CreateUnit(350, 350, false, ELVEN_ARCHER, FREE_MEN_UNIT);
 	villager2 = App->entityManager->CreateUnit(600, 400, true, ELVEN_ARCHER, FREE_MEN_UNIT);
-	TestBuilding = App->entityManager->CreateBuilding(150, 100, true, BARRACKS, FREE_MEN_BUILDING);
+	//TestBuilding = App->entityManager->CreateBuilding(150, 100, true, BARRACKS, FREE_MEN_BUILDING);
+
+	App->map->CreateMinimap();
+
 	return true;
 }
 
@@ -87,6 +90,8 @@ bool Scene::Update(float dt)
 	iPoint villagerToWorld = App->map->WorldToMap(villager->entityPosition.x, villager->entityPosition.y);
 	string str = to_string(map_coordinates.x) + "," + to_string(map_coordinates.y) + "  " + to_string(villagerToWorld.x) + "," + to_string(villagerToWorld.y);
 	App->win->SetTitle(str.c_str());
+
+
 
 	return true;
 }

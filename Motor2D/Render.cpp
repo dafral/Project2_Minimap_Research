@@ -3,6 +3,9 @@
 #include "Render.h"
 #include "p2Log.h"
 #include "Input.h"
+#include "Textures.h"
+#include "Map.h"
+#include <algorithm>
 
 #define VSYNC true
 
@@ -70,6 +73,26 @@ bool Render::PreUpdate()
 
 bool Render::PostUpdate()
 {
+	// My changes --------------------------------------------------
+
+	std::sort(sprites_toDraw.begin(), sprites_toDraw.end(), [](const Sprite& lhs, const Sprite& rhs) { return lhs.priority < rhs.priority; });
+
+	for (int it = 0; it < sprites_toDraw.size(); it++)
+	{
+		if (sprites_toDraw[it].texture != nullptr)
+			Blit(sprites_toDraw[it].texture, sprites_toDraw[it].pos.x, sprites_toDraw[it].pos.y, &sprites_toDraw[it].rect, sprites_toDraw[it].flip);
+		else
+		{
+			if (sprites_toDraw[it].radius == 0) DrawQuad(sprites_toDraw[it].rect, sprites_toDraw[it].r, sprites_toDraw[it].g, sprites_toDraw[it].b);
+			else DrawCircle(sprites_toDraw[it].pos.x, sprites_toDraw[it].pos.y, sprites_toDraw[it].radius, sprites_toDraw[it].r, sprites_toDraw[it].g, sprites_toDraw[it].b);
+		}
+	}
+
+
+	
+
+	// ----------------------------------------------------------------
+
 	SDL_SetRenderDrawColor(renderer, background.r, background.g, background.g, background.a);
 	SDL_RenderPresent(renderer);
 	return true;
@@ -78,6 +101,8 @@ bool Render::PostUpdate()
 // Called before quitting
 bool Render::CleanUp()
 {
+	sprites_toDraw.clear();
+
 	LOG("Destroying SDL render");
 	SDL_DestroyRenderer(renderer);
 	return true;
