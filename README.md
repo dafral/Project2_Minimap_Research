@@ -17,7 +17,7 @@ A mini-map helps the player orient himself and warn him of challenges not visibl
 ## A bit of history
 The first mini-maps in videogames history can be found in arcade games. Some examples are Rally-X by Namco in 1980 (first image) and Defender by Williams Electronics in 1981 (second image). The utility of the mini-map at the beginning was to help the player and to make the game more fair. Imagine playing Rally-X without knowing where the enemies are going to pop up! 
 
-![Image](https://im3.ezgif.com/tmp/ezgif-3-63aa0369f4.gif)
+![Image](https://media.giphy.com/media/26FmPCQvSOJy1Hbl6/giphy.gif)
 ![Image](https://www.c64-wiki.com/images/c/cb/Defender_Animation.gif)
 
 The mini-map was also a particularly desirable feature in dungeon crawls, which typically featured a dungeon with many levels for players to explore. Before automapping, players were expected to draw maps by hand as they played the game, so they could navigate through the dungeon levels later. For this reason, game boxes for early 1980s Wizardry games, for example, included graph paper.
