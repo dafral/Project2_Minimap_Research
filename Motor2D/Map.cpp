@@ -535,11 +535,11 @@ void Map::CreateMinimap() {
 						Sprite bar;
 						iPoint coords = MapToWorld(x, y);
 
-						bar.rect.w = 8;
-						bar.rect.h = 8;
-						bar.priority = 1;
-						bar.rect.x = coords.x * 0.25;
-						bar.rect.y = coords.y * 0.25;
+						bar.rect.w = 4;
+						bar.rect.h = 4;
+						bar.priority = 2;
+						bar.rect.x =  700 - App->render->camera.x + (coords.x * 0.10);
+						bar.rect.y =  500 - App->render->camera.y + (coords.y * 0.10);
 
 						if (tile_id > 0 && tile_id <= 7) 
 
