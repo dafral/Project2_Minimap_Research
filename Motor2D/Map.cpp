@@ -3,6 +3,7 @@
 #include "FileSystem.h"
 #include "Textures.h"
 #include "Map.h"
+#include "EntityManager.h"
 #include "p2Log.h"
 #include <math.h>
 
@@ -509,7 +510,8 @@ bool Map::CreateWalkabilityMap(int& width, int& height, uchar** buffer) const
 }
 
 void Map::CreateMinimap() {
-	{
+
+	//CREATION OF THE MAP
 		if (map_loaded == false)
 			return;
 
@@ -537,7 +539,7 @@ void Map::CreateMinimap() {
 
 						bar.rect.w = 4;
 						bar.rect.h = 4;
-						bar.priority = 2;
+						bar.priority = 1;
 						bar.rect.x =  700 - App->render->camera.x + (coords.x * 0.10);
 						bar.rect.y =  500 - App->render->camera.y + (coords.y * 0.10);
 
@@ -554,5 +556,48 @@ void Map::CreateMinimap() {
 				}
 			}
 		}
-	}
+
+		//ENTITIES 
+		Sprite bar;
+
+		//ALLIED UNITS
+		for (list<Unit*>::iterator it = App->entityManager->friendlyUnitList.begin(); it != App->entityManager->friendlyUnitList.end(); it++) {
+			bar.rect.w = 4;
+			bar.rect.h = 4;
+			bar.priority = 2;
+
+			bar.r = 243;
+			bar.g = 123;
+			bar.b = 173;
+
+			iPoint coords;			
+			coords.x = (*it)->entityPosition.x;
+			coords.y = (*it)->entityPosition.y;
+
+			bar.rect.x = 700 - App->render->camera.x + (coords.x * 0.10);
+			bar.rect.y = 500 - App->render->camera.y + (coords.y * 0.10);
+
+			App->render->sprites_toDraw.push_back(bar);
+		}
+
+		//ENEMY UNITS
+		for (list<Unit*>::iterator it = App->entityManager->enemyUnitList.begin(); it != App->entityManager->enemyUnitList.end(); it++) {
+			bar.rect.w = 4;
+			bar.rect.h = 4;
+			bar.priority = 2;
+
+			bar.r = 190;
+			bar.g = 16;
+			bar.b = 235;
+
+			iPoint coords;
+			coords.x = (*it)->entityPosition.x;
+			coords.y = (*it)->entityPosition.y;
+
+			bar.rect.x = 700 - App->render->camera.x + (coords.x * 0.10);
+			bar.rect.y = 500 - App->render->camera.y + (coords.y * 0.10);
+
+			App->render->sprites_toDraw.push_back(bar);
+		}
+
 }
