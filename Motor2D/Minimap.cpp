@@ -18,7 +18,6 @@
 Minimap::Minimap() : Module()
 {
 	name = "minimap";
-	//minimap_atlas = App->tex->Load("maps/minimap_atlas.png");
 }
 
 //Destructor
@@ -35,10 +34,15 @@ bool Minimap::CleanUp()
 	return true;
 }
 
+void Minimap::LoadAtlas(const char* atlas) 
+{
+	minimap_atlas = App->tex->Load(atlas);
+}
+
+
+
 void Minimap::CreateMinimap()
 {
-
-	minimap_atlas = App->tex->Load("maps/minimap_atlas.png");
 
 	if (App->map->map_loaded == false)
 		return;
@@ -66,10 +70,33 @@ void Minimap::CreateMinimap()
 
 					else
 
-						App->render->Blit(minimap_atlas, POS_X, POS_Y, &red);
+						App->render->Blit(minimap_atlas, POS_X, POS_Y, &blue);
 
 				}
 			}
 		}
+	}
+}
+
+void Minimap::UpdateMinimap() {
+
+	//ALLIED UNITS
+	for (list<Unit*>::iterator it = App->entityManager->friendlyUnitList.begin(); it != App->entityManager->friendlyUnitList.end(); it++) {
+
+		iPoint coords;
+		coords.x = (*it)->entityPosition.x;
+		coords.y = (*it)->entityPosition.y;
+
+		App->render->Blit(minimap_atlas, POS_X, POS_Y, &yellow);
+	}
+
+	//ENEMY UNITS
+	for (list<Unit*>::iterator it = App->entityManager->enemyUnitList.begin(); it != App->entityManager->enemyUnitList.end(); it++) {
+
+		iPoint coords;
+		coords.x = (*it)->entityPosition.x;
+		coords.y = (*it)->entityPosition.y;
+
+		App->render->Blit(minimap_atlas, POS_X, POS_Y, &red);
 	}
 }

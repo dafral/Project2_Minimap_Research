@@ -18,8 +18,14 @@ public:
 	//Called before quitting
 	bool CleanUp();
 
+	//Load minimap
+	void Minimap::LoadAtlas(const char* atlas);
+
 	//Create Minimap terrain
 	void Minimap::CreateMinimap();
+
+	//Update Minimap with units
+	void Minimap::UpdateMinimap();
 
 public:
 
