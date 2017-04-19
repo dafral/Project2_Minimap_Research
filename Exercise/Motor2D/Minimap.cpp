@@ -12,11 +12,6 @@
 #include "SDL_TTF\include\SDL_ttf.h"
 #pragma comment( lib, "SDL_ttf/libx86/SDL2_ttf.lib" )
 
-#define MAP_POS_X 700 - App->render->camera.x + (mini_tiles[i].coords.x * 0.1)
-#define MAP_POS_Y 500 - App->render->camera.y + (mini_tiles[i].coords.y * 0.1)
-#define UNITS_POS_X 700 - App->render->camera.x + (coords.x * 0.1)
-#define UNITS_POS_Y 500 - App->render->camera.y + (coords.y * 0.1)
-
 Minimap::Minimap() : Module()
 {
 	name = "minimap";
