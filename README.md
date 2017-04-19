@@ -115,7 +115,7 @@ Now get all the useful information of the real world map. The information we nee
 ### TODO 3
 Let's draw now the minimap. First of all we should draw the terrain. You have all the information in a vector so it should be easy to do that. Use the Blit function from the render to do this. 
 
-Remember we have to translate all the coordinates to our mini-map. Choose a ratio you think it fits and doesn't look weird.
+Remember we have to translate all the coordinates to our mini-map. Choose a ratio you think it fits and doesn't look weird. And of course remember to place the minimap in a position where you think it can fit, don't put it on the middle of the screen or out of the camera.
 
 All the SDL_Rects are already created, they are called green, blue, yellow and red.
 
@@ -126,8 +126,9 @@ Now let's draw the units. First the allies. Remember the position of the units s
 Do the same with the enemy units. Change the color so you can differentiate them.
 
 ### TODO 6
+It's ready! Now just call the function DrawMinimap() and you will be able to see your minimap.
 
-
+[Link]()
 
 ____________________________________________________________________________________________________________________________________
 You can use the [editor on GitHub](https://github.com/dafral/Project2_Minimap_Research/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
