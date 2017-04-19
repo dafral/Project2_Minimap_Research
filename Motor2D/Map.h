@@ -121,7 +121,7 @@ public:
 	bool CreateWalkabilityMap(int& width, int& height, uchar** buffer) const;
 	iPoint GetTileBlit(int x, int y) const;
 
-private:
+public:
 
 	bool LoadMap();
 	bool LoadTilesetDetails(pugi::xml_node& tileset_node, TileSet* set);
@@ -131,14 +131,11 @@ private:
 
 	TileSet* GetTilesetFromTileId(int id) const;
 
-public:
 	void CreateMinimap();
 
 public:
 
 	MapData data;
-
-private:
 
 	pugi::xml_document	map_file;
 	string				folder;

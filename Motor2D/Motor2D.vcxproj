@@ -87,6 +87,7 @@
     <ClCompile Include="Audio.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Minimap.cpp" />
     <ClCompile Include="p2Log.cpp" />
     <ClCompile Include="Pathfinding.cpp" />
     <ClCompile Include="PerfTimer.cpp" />
@@ -109,6 +110,7 @@
     <ClInclude Include="Fonts.h" />
     <ClInclude Include="Gui.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="Minimap.h" />
     <ClInclude Include="p2Defs.h" />
     <ClInclude Include="p2Log.h" />
     <ClInclude Include="p2Point.h" />

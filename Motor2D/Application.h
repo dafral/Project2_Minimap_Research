@@ -22,6 +22,7 @@ class Fonts;
 class EntityManager;
 class Collision;
 class Gui;
+class Minimap;
 
 class Application
 {
@@ -100,6 +101,7 @@ public:
 	Collision*			collision = NULL;
 	Gui*				gui = NULL;
 	SceneTest*			scenetest = NULL;
+	Minimap*			minimap = NULL;
 
 	bool				quit = false;
 

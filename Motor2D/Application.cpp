@@ -17,6 +17,7 @@
 #include "Collision.h"
 #include "Gui.h"
 #include "SceneTest.h"
+#include "Minimap.h"
 
 // Constructor
 Application::Application(int argc, char* args[]) : argc(argc), args(args)
@@ -37,6 +38,7 @@ Application::Application(int argc, char* args[]) : argc(argc), args(args)
 	collision = new Collision();
 	gui = new Gui();
 	scenetest = new SceneTest();
+	minimap = new Minimap();
 
 	// Ordered for awake / Start / Update
 	// Reverse order of CleanUp
@@ -50,6 +52,7 @@ Application::Application(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(font);
 	AddModule(gui);
 	//AddModule(scenetest);
+	AddModule(minimap);
 
 	// scene last
 	AddModule(scene);

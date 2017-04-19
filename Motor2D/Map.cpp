@@ -540,8 +540,8 @@ void Map::CreateMinimap() {
 						bar.rect.w = 4;
 						bar.rect.h = 4;
 						bar.priority = 1;
-						bar.rect.x =  700 - App->render->camera.x + (coords.x * 0.10);
-						bar.rect.y =  500 - App->render->camera.y + (coords.y * 0.10);
+						bar.rect.x =  700 - App->render->camera.x + (coords.x * 0.1);
+						bar.rect.y =  500 - App->render->camera.y + (coords.y * 0.1);
 
 						if (tile_id > 0 && tile_id <= 7) 
 
@@ -594,10 +594,12 @@ void Map::CreateMinimap() {
 			coords.x = (*it)->entityPosition.x;
 			coords.y = (*it)->entityPosition.y;
 
-			bar.rect.x = 700 - App->render->camera.x + (coords.x * 0.10);
-			bar.rect.y = 500 - App->render->camera.y + (coords.y * 0.10);
+			bar.rect.x = 700 - App->render->camera.x + (coords.x * 0.1);
+			bar.rect.y = 500 - App->render->camera.y + (coords.y * 0.1);
 
 			App->render->sprites_toDraw.push_back(bar);
 		}
 
+		//SCREEN
+		App->render->DrawQuad({ (int)(700 - App->render->camera.x/0.1), (int)(500 - App->render->camera.y/0.1), 80, 60 }, 255, 255, 255, 255, false);
 }
