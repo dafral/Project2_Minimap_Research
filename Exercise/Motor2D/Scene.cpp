@@ -51,11 +51,11 @@ bool Scene::Start()
 
 	//TODO 1
 	//Call the function LoadAtlas()
-	App->minimap->LoadAtlas("maps/minimap_atlas.png");
+
 
 	//TODO 2
 	//Call the function CreateMinimap()
-	App->minimap->CreateMinimap();
+
 
 	return true;
 }
@@ -99,7 +99,6 @@ bool Scene::Update(float dt)
 
 	//TODO 6
 	//Call the function DrawMinimap()
-	App->minimap->DrawMinimap();
 
 	return true;
 }
