@@ -48,9 +48,13 @@ bool Scene::Start()
 	//Test
 	villager = App->entityManager->CreateUnit(350, 350, false, ELVEN_ARCHER, FREE_MEN_UNIT);
 	villager2 = App->entityManager->CreateUnit(600, 400, true, ELVEN_ARCHER, FREE_MEN_UNIT);
-	//TestBuilding = App->entityManager->CreateBuilding(150, 100, true, BARRACKS, FREE_MEN_BUILDING);
 
+	//TODO 1
+	//Call the function LoadAtlas()
 	App->minimap->LoadAtlas("maps/minimap_atlas.png");
+
+	//TODO 2
+	//Call the function CreateMinimap()
 	App->minimap->CreateMinimap();
 
 	return true;
@@ -93,7 +97,9 @@ bool Scene::Update(float dt)
 	string str = to_string(map_coordinates.x) + "," + to_string(map_coordinates.y) + "  " + to_string(villagerToWorld.x) + "," + to_string(villagerToWorld.y);
 	App->win->SetTitle(str.c_str());
 
-	App->minimap->UpdateMinimap();
+	//TODO
+	//Call the function DrawMinimap()
+	App->minimap->DrawMinimap();
 
 	return true;
 }

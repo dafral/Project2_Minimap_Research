@@ -2,6 +2,14 @@
 #define __MINIMAP_H__
 
 #include "Module.h"
+#include "p2Point.h"
+
+//TODO 2 (INFO)
+//Remember the mini_tiles is a vector of minimap_tiles
+struct minimap_tiles {
+	iPoint coords;
+	int id;
+};
 
 class Minimap : public Module
 {
@@ -25,9 +33,11 @@ public:
 	void Minimap::CreateMinimap();
 
 	//Update Minimap with units
-	void Minimap::UpdateMinimap();
+	void Minimap::DrawMinimap();
 
 public:
+
+	std::vector<minimap_tiles> mini_tiles;
 
 	SDL_Texture* minimap_atlas;
 
