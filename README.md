@@ -26,7 +26,7 @@ The mini-map was also a particularly desirable feature in dungeon crawls, which 
 
 Since then, the mini-map has been conquering more and more genres and games, and nowadays we can found them in almost every genre. Mini-maps have become very common specially in real-time strategy and MMORPG video games because they serve as an indication of where the current screen lies within the scope of the game world. Most first person shooter games also have some version or variant of the mini map, often showing enemies in real time.
 
-![Image](http://media.vandal.net/i/1200x630/21345/final-fantasy-xv-20169817299_1.jpg)
+![Image](http://www.gamersheroes.com/wp-content/uploads/2014/03/Guild-Wars-2-Gameplay-Screenshot-6.jpg)
 
 
 ## Diferences in mini-maps
@@ -93,6 +93,40 @@ Designing a mini-map can be easy, but designing a mini-map that suits the game, 
 - **Add relevant information that can help the players**. Metal Gear Solid shows the vision cones of the soldiers, Fallout shows the distance in meters between you and the point you marked... If you think the players should know some extra information, show them.
 
 ![Image](http://i.imgur.com/VUv42wG.jpg)
+
+## HOW A MINIMAP WORKS
+Okay, now we know how to design a mini-map and when we should implement it. But what about the coding part? How we code a mini-map. Well we have to understand first how a mini-map works. 
+
+First of all, we have to understand that as the name mini-map says, a mini-map is the small version of our world map. That means there will be a relation in the proportions of both maps. This relation will dictate everything: the distance before entities, the size of the screen, the size of buildings... What we need to do is to translate all this world data to mini-map data.
+
+![Image](http://i.imgur.com/pXXRpll.png)
+
+For example let's imagine our world is 100 x 100 pixels and we want to do a minimap that is 10 x 10 pixels. Here the ratio would be 1/10. That means that everything will have in order to go from the world to the mini-map will have to be divided by 10. So a unit placed in the pixel 80 x 50 should be shown in the pixel 8 x 5 of our mini-map. 
+
+## Exercise
+Let's see if you have understood everything. There is a downloable exercise you can use to see if you have. In this exercise we will make a very simple isometric mini-map to a simple aplication. Along the code you will find some missing parts of the code that you have to fill with what you think is correct. These blank spaces are marked as TODOs in the code. Let's see what you should do in each TODO to have your mini-map fully working:
+
+### TODO 1
+First of all you have to load the mini-map atlas. All the sprites we are going to use for the mini-map should be there. For this exercise use the atlas provided in the folder maps, inside the data zip. Don't forget to call it after that!
+
+### TODO 2
+Now get all the useful information of the real world map. The information we need is the position and the id. The id will tell us which sprite we should use from our mini-map atlas. Store everything in the "mini_tiles" vector. Look up the struct "minimap_tiles" so you can understand what it's inside of the vector.
+
+### TODO 3
+Let's draw now the minimap. First of all we should draw the terrain. You have all the information in a vector so it should be easy to do that. Use the Blit function from the render to do this. 
+
+Remember we have to translate all the coordinates to our mini-map. Choose a ratio you think it fits and doesn't look weird.
+
+All the SDL_Rects are already created, they are called green, blue, yellow and red.
+
+### TODO 4
+Now let's draw the units. First the allies. Remember the position of the units should have the same relation betweem world map coords and mini-map coords.
+
+### TODO 5
+Do the same with the enemy units. Change the color so you can differentiate them.
+
+### TODO 6
+
 
 
 ____________________________________________________________________________________________________________________________________
